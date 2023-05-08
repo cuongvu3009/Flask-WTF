@@ -36,6 +36,13 @@
         <li>{{error}}</li>
         {% endfor %}
       </ul>
+
+      {{ form.subscribe.label }} {{ form.subscribe }}
+      <ul>
+        {% for error in form.subscribe.errors %}
+        <li>{{error}}</li>
+        {% endfor %}
+      </ul>
       <button type="submit">Login</button>
     </form>
   </body>
